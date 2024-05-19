@@ -1,0 +1,14 @@
+cargo-features = ["edition2024"]
+
+[package]
+name = "oblique-strats"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+leptos = { version = "0.6.11", features = ["csr", "nightly"] }
+rand = "0.8.5"
+stylers = "1.0.0-alpha"
+
+[build-dependencies]
+stylers = "1.0.0-alpha"
