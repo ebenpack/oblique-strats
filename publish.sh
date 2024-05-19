@@ -1,6 +1,6 @@
 #!/bin/bash
 
-trunk build --release
+trunk build --release --public-url ./
 mkdir -p _publish_dir
 git -C _publish_dir/ init
 git -C _publish_dir/ config remote.origin.url >&- || git -C _publish_dir/ remote add origin $(git ls-remote --get-url origin)
