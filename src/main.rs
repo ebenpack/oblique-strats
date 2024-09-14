@@ -219,6 +219,8 @@ static STRATS: &[&str] = &[
 
 fn get_strat_index(prev: Option<usize>) -> usize {
     loop {
+        // Random, but like... not so random that we get the same
+        // index twice in a row :)
         let random_index = rand::thread_rng().gen_range(0..STRATS.len());
         match prev {
             None => return random_index,
